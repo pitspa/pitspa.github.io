@@ -50,7 +50,7 @@ body {
 }
 
 .contact-info {
-    margin-top: 20px;
+    margin-top: 30px; /* Increased margin to shift links down */
 }
 
 .contact-info a {
