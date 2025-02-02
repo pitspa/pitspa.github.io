@@ -32,13 +32,21 @@ body {
     margin-right: 20px;
 }
 
-.main-content {
-    flex: 1;
+.profile {
+    text-align: center; /* Center-align the name */
 }
 
 .profile img {
     width: 100%;
     border-radius: 10px;
+}
+
+.profile h1 {
+    font-size: 1.4em; /* Adjusted font size for the name */
+    margin: 10px 0; /* Adjusted margin */
+    white-space: nowrap; /* Prevent the name from wrapping */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Add ellipsis if the name is too long */
 }
 
 .contact-info {
@@ -58,6 +66,10 @@ body {
     width: 160px; /* Smaller StackExchange flair */
     height: 45px;
     margin-top: 10px;
+}
+
+.main-content {
+    flex: 1;
 }
 
 .card {
@@ -104,5 +116,9 @@ a:hover {
     .sidebar {
         width: 100%;
         margin-bottom: 20px;
+    }
+
+    .profile h1 {
+        font-size: 1.5em; /* Slightly larger font size for mobile */
     }
 }
