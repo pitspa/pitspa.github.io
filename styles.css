@@ -6,13 +6,21 @@ body {
     padding: 0;
     background-color: #f4f4f4;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
     display: flex;
     max-width: 1200px;
-    margin: 0 auto;
+    width: 90%;
+    margin: 20px auto;
     padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .sidebar {
@@ -44,6 +52,12 @@ body {
 
 .contact-info a:hover {
     text-decoration: underline;
+}
+
+.contact-info img {
+    width: 160px; /* Smaller StackExchange flair */
+    height: 45px;
+    margin-top: 10px;
 }
 
 .card {
