@@ -42,12 +42,15 @@ body {
 }
 
 .profile-photo {
-    width: 120px; /* Adjust as needed */
-    height: 120px; /* Adjust as needed */
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image covers the space without distortion */
     margin-bottom: 15px; /* Adds space between the photo and the name */
     border: 3px solid #fff; /* Optional: adds a white border around the photo */
+    display: block;         /* Ensures proper spacing */
+    margin-left: auto;      /* Centers the image */
+    margin-right: auto;     /* Centers the image */
 }
 
 .profile h1 {
