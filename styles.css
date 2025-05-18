@@ -41,6 +41,15 @@ body {
     border-radius: 10px;
 }
 
+.profile-photo {
+    width: 150px; /* Adjust as needed */
+    height: 150px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    margin-bottom: 15px; /* Adds space between the photo and the name */
+    border: 3px solid #fff; /* Optional: adds a white border around the photo */
+}
+
 .profile h1 {
     font-size: 1.4em; /* Adjusted font size for the name */
     margin: 10px 0; /* Adjusted margin */
