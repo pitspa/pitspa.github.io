@@ -47,7 +47,7 @@ body {
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensures the image covers the space without distortion */
     margin-bottom: 15px; /* Adds space between the photo and the name */
-    border: 3px solid #fff; /* Optional: adds a white border around the photo */
+    border: 0px solid #fff; /* Optional: adds a white border around the photo */
 }
 
 .profile h1 {
