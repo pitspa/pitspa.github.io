@@ -55,8 +55,10 @@ body {
     font-size: 1.4em; /* Adjusted font size for the name */
     margin: 10px 0; /* Adjusted margin */
     white-space: nowrap; /* Prevent the name from wrapping */
-    overflow: hidden; /* Hide overflow */
-    text-overflow: ellipsis; /* Add ellipsis if the name is too long */
+    overflow: visible !important;  /* Disables text truncation */
+    text-overflow: unset !important; /* Removes "..." ellipsis */
+    min-width: 100%;       /* Ensures container expands */
+    display: inline-block;  /* Prevents clipping */
 }
 
 .contact-info {
