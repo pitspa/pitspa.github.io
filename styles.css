@@ -10,14 +10,11 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    -webkit-text-size-adjust: 100%;
-    text-size-adjust: 100%;
 }
 
 .container {
     display: flex;
     max-width: 1000px; /* Reduced max-width for a more compact layout */
-    min-width: 1024px !important; /* Desktop minimum width */
     width: 90%;
     margin: 20px auto;
     padding: 20px;
@@ -37,15 +34,6 @@ body {
 
 .profile {
     text-align: center; /* Center-align the name */
-}
-
-/* Disable any mobile-specific media queries */
-@media (max-width: 768px) {
-  /* Override mobile styles here */
-  .sidebar, .main-content {
-    float: none;
-    width: 100% !important;
-  }
 }
 
 .profile img {
