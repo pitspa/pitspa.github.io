@@ -1,3 +1,142 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px; /* Reduced max-width for a more compact layout */
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    width: 220px; /* Slightly narrower sidebar */
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.profile {
+    text-align: center; /* Center-align the name */
+}
+
+.profile img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.profile-photo {
+    width: 150px; /* Adjust as needed */
+    height: 300px; /* Adjust as needed */
+    border-radius: 50%; /* Makes the image circular */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+    margin-bottom: 15px; /* Adds space between the photo and the name */
+    margin-left: auto;      /* Centers the image */
+    margin-right: auto;     /* Centers the image */
+}
+
+.profile h1 {
+    font-size: 1.4em; /* Adjusted font size for the name */
+    margin: 10px 0; /* Adjusted margin */
+    white-space: nowrap; /* Prevent the name from wrapping */
+    overflow: visible !important;  /* Disables text truncation */
+    text-overflow: unset !important; /* Removes "..." ellipsis */
+    min-width: 100%;       /* Ensures container expands */
+    display: inline-block;  /* Prevents clipping */
+}
+
+.contact-info {
+    margin-top: 30px; /* Increased margin to shift links down */
+}
+
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-info img {
+    width: 160px; /* Smaller StackExchange flair */
+    height: 45px;
+    margin-top: 10px;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.card {
+    background-color: #fff;
+    padding: 15px; /* Reduced padding for a more compact look */
+    margin-bottom: 15px; /* Reduced margin between cards */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #2c3e50;
+    margin-bottom: 15px; /* Reduced margin */
+    font-size: 1.5em; /* Slightly smaller heading */
+}
+
+h3 {
+    color: #34495e;
+    font-size: 1.2em; /* Slightly smaller subheading */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 10px 0; /* Reduced margin for lists */
+}
+
+/* Hyperlink Styles */
+a {
+    color: #1a0dab; /* Darker blue for hyperlinks */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .profile h1 {
+        font-size: 1.5em; /* Slightly larger font size for mobile */
+    }
+}
+
+
+
 /* Add these styles to your existing styles.css file */
 
 /* Tab styles */
