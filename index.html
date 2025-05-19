@@ -29,95 +29,123 @@
 
         <!-- Main Content -->
         <main class="main-content">
-            <section id="about">
-                <h2>About Me</h2>
-                <p>PhD Candidate in Statistics at the London School of Economics and Political Science (LSE). My research focus is in the theory of stochastic processes, stochastic analysis, and related applications in quantitative finance.</p>
-                <p>LSE Personal webpage: <a href="https://www.lse.ac.uk/statistics/people/pietro-maria-sparago" target="_blank">here</a>.</p>
-            </section>
+            <div class="tabs">
+                <button class="tab-button active" onclick="openTab(event, 'about')">About Me</button>
+                <button class="tab-button" onclick="openTab(event, 'research')">Research</button>
+                <button class="tab-button" onclick="openTab(event, 'experience')">Work Experience</button>
+                <button class="tab-button" onclick="openTab(event, 'education')">Education</button>
+            </div>
 
-            <!-- Research -->
-            <section id="research">
-                <h2>Research</h2>
-                <div class="card">
-                    <h3>Journal Articles</h3>
-                    <p><i>"Note on the Weak Convergence of Hyperplane α-Quantile Functionals and Their Continuity in the Skorokhod J1 Topology"</i>.</p>
-                    <p><b>Journal of Theoretical Probability, Vol. 38, 2025.</b> <a href="https://link.springer.com/article/10.1007/s10959-024-01390-w" target="_blank">Read here</a>.</p>
-                </div>
-                <div class="card">
-                    <h3>Conference Posters and other publications</h3>
-                    <p><i>"How stretched are equity prices? Evidence from option-implied estimates of ERP"</i>.</p>
-                    <p><b>Bank Overground 2025.</b> <a href="https://www.bankofengland.co.uk/bank-overground/2025/how-stretched-are-equity-prices-evidence-from-option-implied-estimates-of-erp" target="_blank">Read here</a>.</p>
-                    <p><i>"The mathematics of α-quantile options: an introduction"</i>.</p>
-                    <p><b>World Bachelier Congress 2024.</b> <a href="bachelier_poster.pdf" target="_blank">View poster</a>.</p>
-                </div>
-            </section>
+            <!-- Tab content -->
+            <div id="about" class="tab-content" style="display: block;">
+                <section>
+                    <h2>About Me</h2>
+                    <p>PhD Candidate in Statistics at the London School of Economics and Political Science (LSE). My research focus is in the theory of stochastic processes, stochastic analysis, and related applications in quantitative finance.</p>
+                    <p>LSE Personal webpage: <a href="https://www.lse.ac.uk/statistics/people/pietro-maria-sparago" target="_blank">here</a>.</p>
+                </section>
+            </div>
 
-            <!-- Industry Work Experience -->
-            <section id="industry-experience">
-                <h2>Industry Work Experience</h2>
-                <div class="card">
-                    <h3>PhD Researcher Intern</h3>
-                    <p><b>Bank of England</b> (Aug. 2023 - Feb. 2025)</p>
-                    <ul>
-                        <li>MFCD division, Interest Rates and Asset Pricing team. Research work in derivatives markets.</li>
-                        <li>Published on the <a href="https://www.bankofengland.co.uk/bank-overground/2025/how-stretched-are-equity-prices-evidence-from-option-implied-estimates-of-erp" target="_blank">Bank Overground</a>.</li>
-                    </ul>
-                </div>
-            </section>
+            <div id="research" class="tab-content">
+                <section>
+                    <h2>Research</h2>
+                    <div class="card">
+                        <h3>Journal Articles</h3>
+                        <p><i>"Note on the Weak Convergence of Hyperplane α-Quantile Functionals and Their Continuity in the Skorokhod J1 Topology"</i>.</p>
+                        <p><b>Journal of Theoretical Probability, Vol. 38, 2025.</b> <a href="https://link.springer.com/article/10.1007/s10959-024-01390-w" target="_blank">Read here</a>.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Conference Posters and other publications</h3>
+                        <p><i>"How stretched are equity prices? Evidence from option-implied estimates of ERP"</i>.</p>
+                        <p><b>Bank Overground 2025.</b> <a href="https://www.bankofengland.co.uk/bank-overground/2025/how-stretched-are-equity-prices-evidence-from-option-implied-estimates-of-erp" target="_blank">Read here</a>.</p>
+                        <p><i>"The mathematics of α-quantile options: an introduction"</i>.</p>
+                        <p><b>World Bachelier Congress 2024.</b> <a href="bachelier_poster.pdf" target="_blank">View poster</a>.</p>
+                    </div>
+                </section>
+            </div>
 
-            <!-- Academic Work Experience -->
-            <section id="academic-experience">
-                <h2>Academic Work Experience</h2>
-                <div class="card">
-                    <h3>PhD GTA - Graduate Teaching Assistant</h3>
-                    <p><b>LSE</b> (Sep. 2023 - Current)</p>
-                    <ul>
-                        <li>Department of Statistics. Courses: <a href="https://www.lse.ac.uk/resources/calendar2023-2024/courseGuides/ST/2023_ST330.htm" target="_blank">ST330 - Stochastic and Actuarial Methods in Finance</a> and <a href="https://www.lse.ac.uk/resources/calendar2023-2024/courseGuides/ST/2023_ST302.htm" target="_blank">ST302 - Stochastic Processes</a>.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>MSc Teaching Assistant</h3>
-                    <p><b>Bocconi University</b> (Sep. 2020 - June 2021)</p>
-                    <ul>
-                        <li>Department of Finance. Course: <a href="https://didattica.unibocconi.eu/ts/tsn_anteprima.php?cod_ins=20135&anno=2021&IdPag=6354" target="_blank">20135 - Theory of Finance</a>.</li>
-                    </ul>
-                </div>
-            </section>
+            <div id="experience" class="tab-content">
+                <section>
+                    <h2>Work Experience</h2>
+                    <div class="card">
+                        <h3>PhD Researcher Intern</h3>
+                        <p><b>Bank of England</b> (Aug. 2023 - Feb. 2025)</p>
+                        <ul>
+                            <li>MFCD division, Interest Rates and Asset Pricing team. Research work in derivatives markets.</li>
+                            <li>Published on the <a href="https://www.bankofengland.co.uk/bank-overground/2025/how-stretched-are-equity-prices-evidence-from-option-implied-estimates-of-erp" target="_blank">Bank Overground</a>.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>PhD GTA - Graduate Teaching Assistant</h3>
+                        <p><b>LSE</b> (Sep. 2023 - Current)</p>
+                        <ul>
+                            <li>Department of Statistics. Courses: <a href="https://www.lse.ac.uk/resources/calendar2023-2024/courseGuides/ST/2023_ST330.htm" target="_blank">ST330 - Stochastic and Actuarial Methods in Finance</a> and <a href="https://www.lse.ac.uk/resources/calendar2023-2024/courseGuides/ST/2023_ST302.htm" target="_blank">ST302 - Stochastic Processes</a>.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>MSc Teaching Assistant</h3>
+                        <p><b>Bocconi University</b> (Sep. 2020 - June 2021)</p>
+                        <ul>
+                            <li>Department of Finance. Course: <a href="https://didattica.unibocconi.eu/ts/tsn_anteprima.php?cod_ins=20135&anno=2021&IdPag=6354" target="_blank">20135 - Theory of Finance</a>.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
 
-            <!-- Education -->
-            <section id="education">
-                <h2>Education</h2>
-                <div class="card">
-                    <h3>PhD, Statistics</h3>
-                    <p><b>LSE</b> (Current)</p>
-                    <ul>
-                        <li><a href="https://www.lse.ac.uk/study-at-lse/Graduate/degree-programmes-2022/MPhilPhD-Statistics" target="_blank">Program Details</a>.</li>
-                        <li>Research Group: Probability in Finance and Insurance (PFI).</li>
-                        <li>Advisors: <a href="https://www.lse.ac.uk/statistics/people/umut-cetin" target="_blank">Prof. Umut Cetin</a> and <a href="https://www.lse.ac.uk/statistics/people/angelos-dassios" target="_blank">Prof. Angelos Dassios</a>.</li>
-                        <li><a href="https://www.lse.ac.uk/statistics/people/pietro-maria-sparago" target="_blank">My LSE Webpage</a>.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>MSc, Quantitative Methods for Risk Management</h3>
-                    <p><b>LSE</b> (Oct. 2022)</p>
-                    <ul>
-                        <li><a href="https://www.lse.ac.uk/resources/calendar2021-2022/programmeRegulations/taughtMasters/2021/MScQuantitativeMethodsForRiskManagement.htm" target="_blank">Program Details</a>.</li>
-                        <li>Graduated with Distinction. PhD-level courses: Probability and Mathematical Statistics I & II (ST452/ST453).</li>
-                        <li>Received full scholarship for the PhD in Statistics.</li>
-                    </ul>
-                </div>
-                <div class="card">
-                    <h3>MSc, Finance, Major in Quantitative Finance</h3>
-                    <p><b>Bocconi University</b> (Apr. 2020)</p>
-                    <ul>
-                        <li><a href="https://www.unibocconi.eu/wps/wcm/connect/Bocconi/SitoPubblico_EN/Navigation+Tree/Home/programs/master+of+science/Finance/" target="_blank">Program Details</a>.</li>
-                        <li>Graduated with 110/110 cum laude.</li>
-                        <li>Dissertation Topic: <i>Low Frequency Financial Econometrics</i>.</li>
-                        <li>Thesis Advisor: <a href="https://faculty.unibocconi.eu/claudiotebaldi/" target="_blank">Prof. Claudio Tebaldi</a>.</li>
-                    </ul>
-                </div>
-            </section>
+            <div id="education" class="tab-content">
+                <section>
+                    <h2>Education</h2>
+                    <div class="card">
+                        <h3>PhD, Statistics</h3>
+                        <p><b>LSE</b> (Current)</p>
+                        <ul>
+                            <li><a href="https://www.lse.ac.uk/study-at-lse/Graduate/degree-programmes-2022/MPhilPhD-Statistics" target="_blank">Program Details</a>.</li>
+                            <li>Research Group: Probability in Finance and Insurance (PFI).</li>
+                            <li>Advisors: <a href="https://www.lse.ac.uk/statistics/people/umut-cetin" target="_blank">Prof. Umut Cetin</a> and <a href="https://www.lse.ac.uk/statistics/people/angelos-dassios" target="_blank">Prof. Angelos Dassios</a>.</li>
+                            <li><a href="https://www.lse.ac.uk/statistics/people/pietro-maria-sparago" target="_blank">My LSE Webpage</a>.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>MSc, Quantitative Methods for Risk Management</h3>
+                        <p><b>LSE</b> (Oct. 2022)</p>
+                        <ul>
+                            <li><a href="https://www.lse.ac.uk/resources/calendar2021-2022/programmeRegulations/taughtMasters/2021/MScQuantitativeMethodsForRiskManagement.htm" target="_blank">Program Details</a>.</li>
+                            <li>Graduated with Distinction. PhD-level courses: Probability and Mathematical Statistics I & II (ST452/ST453).</li>
+                            <li>Received full scholarship for the PhD in Statistics.</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>MSc, Finance, Major in Quantitative Finance</h3>
+                        <p><b>Bocconi University</b> (Apr. 2020)</p>
+                        <ul>
+                            <li><a href="https://www.unibocconi.eu/wps/wcm/connect/Bocconi/SitoPubblico_EN/Navigation+Tree/Home/programs/master+of+science/Finance/" target="_blank">Program Details</a>.</li>
+                            <li>Graduated with 110/110 cum laude.</li>
+                            <li>Dissertation Topic: <i>Low Frequency Financial Econometrics</i>.</li>
+                            <li>Thesis Advisor: <a href="https://faculty.unibocconi.eu/claudiotebaldi/" target="_blank">Prof. Claudio Tebaldi</a>.</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
         </main>
     </div>
+
+    <script>
+        function openTab(evt, tabName) {
+            // Hide all tab content
+            var tabcontent = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            
+            // Remove active class from all buttons
+            var tabbuttons = document.getElementsByClassName("tab-button");
+            for (var i = 0; i < tabbuttons.length; i++) {
+                tabbuttons[i].className = tabbuttons[i].className.replace(" active", "");
+            }
+            
+            // Show the current tab and add active class to the button
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
 </body>
 </html>
